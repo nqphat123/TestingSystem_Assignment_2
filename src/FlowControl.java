@@ -177,6 +177,255 @@ public class FlowControl {
 			break;
 		}
 		
+		//Question 8:
+		System.out.println("-------------");
+		System.out.println("Question 8:");
+		Account[] acc = {account1, account2, account3};
+		for(Account account: acc) {
+			System.out.println("Account ID: " + account.id + " Email: " + account.email + " Name: " + account.fullName);
+		}
+		
+		//Question 9:
+		System.out.println("-------------");
+		System.out.println("Question 9:");
+		Department[] depArray = {department1, department2, department3};
+		for (Department department : depArray) {
+			System.out.println("Department ID: " + department.id + " Name: " + department.departmentName);
+		}
+		
+		//Question 10:
+		System.out.println("-------------");
+		System.out.println("Question 10:");
+		Account[] accArray = {account1, account2, account3};
+		for (int i = 0; i < accArray.length; i++) {
+			System.out.println("Thông tin account thứ "+ (i + 1) + " là: " + " Email: "+ accArray[i].email + " Fullname: " + accArray[i].fullName + " Phòng ban: " + accArray[i].department.departmentName);
+		}
+		
+		//Question 11:
+		System.out.println("-------------");
+		System.out.println("Question 11:");
+		Department[] depArray1 = {department1, department2, department3};
+		for (int i = 0; i < depArray1.length; i++) {
+			System.out.println("Thông tin department thứ " + (i + 1) + " là: " + "ID: " + depArray1[i].id + " Name: " + depArray1[i].departmentName);
+		}
+		
+		//Question 12:
+		System.out.println("-------------");
+		System.out.println("Question 12:");
+		Department[] depArray2 = {department1, department2, department3};
+		for (int i = 0; i < 2; i++) {
+			System.out.println("Thông tin department thứ " + (i + 1) + " là:" + "ID: " + depArray2[i].id + " Name: " + depArray2[i].departmentName);
+		}
+		
+		//Question 13:
+		System.out.println("-------------");
+		System.out.println("Question 13:");
+		Account[] accArray1 = {account1, account2, account3};
+		for (int i = 0; i < accArray1.length; i++) {
+			if (i != 1) {
+				System.out.println("Thông tin account thứ "+ (i + 1) + " là: " + " Email: "+ accArray1[i].email + " Fullname: " + accArray1[i].fullName + " Phòng ban: " + accArray1[i].department.departmentName);
+			}
+		}
+		
+		//Question 14:
+		System.out.println("-------------");
+		System.out.println("Question 14:");
+		Account[] accArray2 = {account1, account2, account3};
+		for (int i = 0; i < accArray2.length; i++) {
+			if (accArray2[i].id < 4) {
+				System.out.println("Thông tin account thứ "+ (i + 1) + " là: " + " Email: "+ accArray2[i].email + " Fullname: " + accArray2[i].fullName + " Phòng ban: " + accArray2[i].department.departmentName);
+			}
+		}
+		
+		//Question 15:
+		System.out.println("-------------");
+		System.out.println("Question 15:");
+		for (int i = 1 ; i <= 20; i++) {
+			if (i % 2 == 0) {
+				System.out.printf(i + " ");
+			}
+		}
+		
+		//Question 16:
+		//Question 16-1:
+		System.out.println(" ");
+		System.out.println("-------------");
+		System.out.println("Question 16:");
+		System.out.println("Question 16-1:");
+		Account[] accArray161 = {account1, account2, account3};
+		int i = 0;
+		while (i < accArray161.length) {
+			System.out.println("Thông tin account thứ "+ (i + 1) + " là: " + " Email: "+ accArray161[i].email + " Fullname: " + accArray161[i].fullName + " Phòng ban: " + accArray161[i].department.departmentName);
+			i++;
+		}
+		
+		//Question 16-2:
+		System.out.println("-------------");
+		System.out.println("Question 16-2:");
+		Department[] depArray162 = {department1, department2, department3};
+		int i162 = 0;
+		while(i162 < depArray162.length) {
+			System.out.println("Thông tin department thứ " + (i162 + 1) + " là: " + "ID: " + depArray162[i162].id + " Name: " + depArray162[i162].departmentName);
+			i162++;
+		}
+		
+		//Question 16-3:
+		System.out.println("-------------");
+		System.out.println("Question 16-3:");
+		Department[] depArray163 = {department1, department2, department3};
+		int i163 = 0;
+		while(i163 < 2) {
+			System.out.println("Thông tin department thứ " + (i163 + 1) + " là:" + "ID: " + depArray163[i163].id + " Name: " + depArray163[i163].departmentName);
+			i163++;
+		}
+		
+		//Question 16-4:
+		System.out.println("-------------");
+		System.out.println("Question 16-4:");
+		Account[] accArray164 = {account1, account2, account3};
+		int i164 = 0;
+		while (i164 < accArray164.length) {
+			if (i164 != 1) {
+				System.out.println("Thông tin account thứ "+ (i164 + 1) + " là: " + " Email: "+ accArray164[i164].email + " Fullname: " + accArray164[i164].fullName + " Phòng ban: " + accArray164[i164].department.departmentName);			
+			}
+			i164++;	
+		}
+		
+		//Question 16-5:
+		System.out.println("-------------");
+		System.out.println("Question 16-5:");
+		Account[] accArray165 = {account1, account2, account3};
+		int i165 = 0;
+		while (i165 < accArray165.length) {
+			if (i165 < 4) {
+				System.out.println("Thông tin account thứ "+ (i165 + 1) + " là: " + " Email: "+ accArray165[i165].email + " Fullname: " + accArray165[i165].fullName + " Phòng ban: " + accArray165[i165].department.departmentName);		
+			}
+			i165++;
+		}
+		
+		//Question 16-6:
+		System.out.println("-------------");
+		System.out.println("Question 16-6:");
+		int i166 = 1;
+		while(i166 <= 20) {
+			if (i166 % 2 == 0) {
+			System.out.println(i166 + " ");
+		}
+			i166++;
+		}
+		
+		
+		//Question 17:
+		//Question 17-1:
+		System.out.println("-------------");
+		System.out.println("Question 17:");
+		System.out.println("Question 17-1:");
+		Account[] accArray171 = {account1, account2, account3};
+		int i171 = 0;
+		do {
+			System.out.println("Thông tin account thứ "+ (i171 + 1) + " là: " + " Email: "+ accArray171[i171].email + " Fullname: " + accArray171[i171].fullName + " Phòng ban: " + accArray171[i171].department.departmentName);	
+			i171++;
+		} while (i171 < accArray171.length);
+		
+		//Question 17-2:
+		System.out.println("-------------");
+		System.out.println("Question 17-2:");
+		Department[] depArray172 = {department1, department2, department3};
+		int i172 = 0;
+		do {
+			System.out.println("Thông tin department thứ " + (i172 + 1) + " là: " + "ID: " + depArray172[i172].id + " Name: " + depArray172[i172].departmentName);
+			i172++;
+		} while (i172 < depArray172.length);
+		
+		//Question 17-3:
+		System.out.println("-------------");
+		System.out.println("Question 17-3:");
+		Department[] depArray173 = {department1, department2, department3};
+		int i173 = 0;
+		do {
+			System.out.println("Thông tin department thứ " + (i173 + 1) + " là: " + "ID: " + depArray173[i173].id + " Name: " + depArray173[i173].departmentName);
+			i173++;
+		}while(i173 < 2);
+		
+		//Question 17-4:
+		System.out.println("-------------");
+		System.out.println("Question 17-4:");
+		Account[] accArray174 = {account1, account2, account3};
+		int i174 = 0;
+		do {
+			if(i174 != 1) {
+			System.out.println("Thông tin account thứ "+ (i174 + 1) + " là: " + " Email: "+ accArray174[i174].email + " Fullname: " + accArray174[i174].fullName + " Phòng ban: " + accArray174[i174].department.departmentName);	
+			}
+			i174++;
+		} while(i174 < accArray174.length);
+		
+		//Question 17-5:
+		System.out.println("-------------");
+		System.out.println("Question 17-5:");
+		Account[] accArray175 = {account1, account2, account3};
+		int i175 = 0;
+		do {
+			if(accArray175[i175].id < 4) {
+			System.out.println("Thông tin account thứ "+ (i175 + 1) + " là: " + " Email: "+ accArray175[i175].email + " Fullname: " + accArray175[i175].fullName + " Phòng ban: " + accArray175[i175].department.departmentName);	
+			}
+			i175++;
+		} while(i175 < accArray175.length);
+		
+		//Question 17-6:
+		System.out.println("-------------");
+		System.out.println("Question 17-6:");
+		int i176 = 1;
+		do {
+			if(i176 % 2 == 0) {
+				System.out.println(i176 + " ");
+			}
+			i176++;
+		} while (i176 <= 20);
+		
+		//Exercise 2:
+		//Question 1:
+		System.out.println("-------------");
+		System.out.println("Exercise 2:");
+		System.out.println("Question 1:");
+		int q1 = 5;
+		System.out.printf("%d %n", q1);
+		
+		//Question 2:
+		System.out.println("-------------");
+		System.out.println("Question 2:");
+		int q2 = 100000000;
+		System.out.printf(Locale.US, "%,d %n", q2);
+
+		//Question 3:
+		System.out.println("-------------");
+		System.out.println("Question 3:");
+		double q3 = 5.567098;
+		System.out.printf("%.4f", q3);
+		
+		//Question 4:
+		System.out.print("\n");
+		System.out.println("-------------");
+		System.out.println("Question 4:");
+		String q4 = "Nguyễn Văn A";
+		System.out.printf("Tên tôi là \"" + q4 + "\" và tôi đang độc thân\n");
+		
+		//Question 5:
+		System.out.println("-------------");
+		System.out.println("Question 5:");
+		String pattern ="dd/MM/yyyy HH:mm:ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		String date = simpleDateFormat.format(new Date());
+		System.out.println(date);
+		
+		//Question 6:
+		System.out.println("-------------");
+		System.out.println("Question 6:");
+		Account[] accArray6 = {account1, account2, account3};
+		System.out.println("Email           | Full Name        | Department");
+        System.out.println("----------------|------------------|--------------");
+		for (int j = 0; j < accArray6.length; j++) {
+			System.out.printf("%-15s | %-16s | %-15s%n", accArray6[j].email, accArray6[j].fullName, accArray6[j].department.departmentName);
+		}
 		
 	}
 }

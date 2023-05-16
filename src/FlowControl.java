@@ -427,5 +427,68 @@ public class FlowControl {
 			System.out.printf("%-15s | %-16s | %-15s%n", accArray6[j].email, accArray6[j].fullName, accArray6[j].department.departmentName);
 		}
 		
+		// Exercise 4:
+		// Question 1:
+		System.out.println("-------------");
+		System.out.println("Exercise 4:");
+		System.out.println("Question 1:");
+		Random random = new Random();
+		int n = random.nextInt();
+		System.out.println("Số ngẫu nhiên: " + n);
+
+		// Question 2:
+		System.out.println("-------------");
+		System.out.println("Question 2:");
+		float f = random.nextFloat();
+		System.out.println("Số thực ngẫu nhiên: " + f);
+
+		// Question 3:
+		System.out.println("-------------");
+		System.out.println("Question 3:");
+		String[] nameArr = { "Loan", "Phát", "Âu", "Nga", "Lợi", "Ny" };
+		int i3 = random.nextInt(nameArr.length);
+		System.out.println("Tên ngẫu nhiên 1 bạn: " + nameArr[i3] + ".");
+
+		// Question 4:
+		System.out.println("-------------");
+		System.out.println("Question 4:");
+//		int minDay = (int) LocalDate.of(1995, 07, 24).toEpochDay();
+//		int maxDay = (int) LocalDate.of(1992, 12, 20).toEpochDay();
+//		System.out.println("Minday: " + minDay);
+//		System.out.println("Maxday: " + maxDay);
+//		long randomInt = minDay + random.nextInt(maxDay - minDay);
+//		localDate randomDay = LocalDate.ofEpochDay(randomInt);
+//		System.out.println(randomDay);
+
+		LocalDate startDate = LocalDate.of(1995, 7, 24);
+		LocalDate endDate = LocalDate.of(1995, 12, 20);
+		long daysBetween = ChronoUnit.DAYS.between(startDate, endDate);
+		long randomDays = ThreadLocalRandom.current().nextLong(daysBetween + 1);
+		LocalDate randomDate = startDate.plusDays(randomDays);
+		System.out.println("Ngày ngẫu nhiên trong khoảng thời gian từ 24-07-1995 đến 20-12-1995:");
+		System.out.println(randomDate);
+
+		// Question 5:
+		System.out.println("-------------");
+		System.out.println("Question 5:");
+		int now = (int) LocalDate.now().toEpochDay();
+		int randomDate5 = now - random.nextInt(365);
+		LocalDate reusultDate = LocalDate.ofEpochDay(randomDate5);
+		System.out.println("Ngày ngẫu nhiên là: " + reusultDate);
+
+		// Question 6:
+		System.out.println("-------------");
+		System.out.println("Question 6:");
+		int maxDay6 = (int) LocalDate.now().toEpochDay();
+		long randomDay6 = random.nextInt(maxDay6);
+		LocalDate resultDate6 = LocalDate.ofEpochDay(randomDay6);
+		System.out.println("1 ngày ngẫu nhiên trong quá khứ: " + resultDate6);
+
+		// Question 7:
+		System.out.println("-------------");
+		System.out.println("Question 7:");
+		int q7 = random.nextInt(999 - 100 + 1) + 100;
+		System.out.println(q7);
+
 	}
 }
